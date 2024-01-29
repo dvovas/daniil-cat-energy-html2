@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "stylelint-config-htmlacademy",
+    "stylelint-config-clean-order",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "scss/double-slash-comment-whitespace-inside": "never",
+    "alpha-value-notation": "number",
+    "max-empty-lines": 1,
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignorePseudoClasses": ["deep"]
+    }],
+    "color-hex-case": "upper"
+  }
+}
+
