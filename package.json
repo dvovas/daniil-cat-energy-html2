@@ -3,8 +3,15 @@
   "private": true,
   "description": "Личный проект «Cat Energy» от HTML Academy",
   "devDependencies": {
-    "prettier": "^2.8.7",
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.1.0",
+    "postcss": "^8.4.33",
+    "prettier": "^2.8.7",
     "stylelint": "^14.16.1",
     "stylelint-config-clean-order": "^5.0.0",
     "stylelint-config-htmlacademy": "^1.1.4",
@@ -15,11 +22,24 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"**/*.{css,scss}\" --fix",
-    "lint": "npm run editorconfig"
+    "lint": "npm run editorconfig",
+    "build": "gulp styles",
+    "start": "gulp"
   },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
   "editorconfig-cli": [
     "*.json",
-    "source/*.html"
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "^20"
