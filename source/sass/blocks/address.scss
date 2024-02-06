@@ -1,0 +1,30 @@
+.address__wrapper {
+  display: flex;
+  gap: 2px;
+  margin: 0 20px;
+  padding: 26px 0;
+}
+
+.address__title {
+  width: 100%;
+  margin: 0;
+
+  font-family: "Oswald-400" , sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.address__place-info {
+  width: 100%;
+
+  font-family: "Arial" , serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.address__image {
+  display: block;
+}
