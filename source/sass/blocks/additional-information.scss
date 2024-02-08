@@ -1,11 +1,10 @@
-.additional-information {
+.page-main__additional-information {
   width: 100%;
-  margin-top: 53px;
-  background-color: #EAEAEA;
+  background-color: $additional-information-grey;
 }
 
 .additional-information__container {
-  margin: 0 20px;
+  margin-top: 53px;
 }
 
 .additional-information__title {
@@ -14,20 +13,21 @@
 }
 
 .additional-information__paragraph {
-  font-family: "Arial" , serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  margin-top: 14px;
+  margin-bottom: 20px;
+
+  font-family: "Arial" , sans-serif;
+  font-weight: 400;
+  color: $black-text;
 }
 
 .additional-information__list {
   display: flex;
   gap: 32px;
+  margin: 0;
 }
 
 .additional-information__wrapper {
-  content: "";
-
   position: relative;
 
   display: flex;
@@ -35,64 +35,65 @@
   align-items: center;
 
   width: 100%;
-  margin-top: 20px;
-  //justify-content: center;
-  &::after {
-    content: "";
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    position: absolute;
-    top: -15px;
-
-    width: 125px;
-    height: 56px;
-
-    background-image: url("../../img/additional-information-border.svg");
-  }
+  border: 1px solid $special-grey;
+  border-radius: 3px;
 }
 
 .additional-information__name {
-  margin: 0;
-  margin-top: 7px;
-  padding: 0;
+  position: absolute;
+  z-index: 2;
+  top: 45px;
 
-  font-family: "Arial" , serif;
+  margin: 0;
+  padding: 0 14px;
+
+  font-family: "Arial" , sans-serif;
   font-size: 12px;
+  font-weight: 400;
   line-height: 12px;
-  color: #444444;
+  color: $black-text;
   text-align: center;
+
+  background-color: $additional-information-grey;
 }
 
 .additional-information__info {
   margin: 0;
   padding: 0;
 
-  font-family: "Oswald-400" , sans-serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 24px;
-  color: #000000;
+  color: $black;
 }
 
-.additional-information-info-paragraph {
-  padding-top: 3px;
-  padding-bottom: 25px;
+.additional-information__info-paragraph {
+  margin-top: 34px;
+  margin-bottom: 39px;
 
-  font-family: "Oswald-400" , sans-serif;
-  font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
-  color: #000000;
+  color: $black;
   text-align: center;
   text-transform: uppercase;
 }
 
-.addition-information__slider {
-  padding-top: 20px;
-  padding-bottom: 42px;
+.additional-information__image {
+  display: block;
+  margin: 0 auto;
 }
 
-.addition-information__slider span {
-  font-family: "Oswald-400" , sans-serif;
-  font-size: 14px;
+.additional-information__slider {
+  padding-top: 20px;
+  padding-bottom: 46px;
+}
+
+.additional-information__slider span {
+  font-weight: 400;
   line-height: 20px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
