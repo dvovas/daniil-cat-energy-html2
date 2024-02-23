@@ -1,17 +1,22 @@
+.advantages-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .advantages-information__wrapper {
   margin-top: 20px;
 }
 
 .advantages-information__title {
   margin-bottom: 42px;
-  margin-left: 20px;
 }
 
 .advantages-information__list {
   display: flex;
   flex-direction: column;
 
-  margin: 0 20px;
+  margin: 0;
   padding:  0;
 
   list-style-type: none;
