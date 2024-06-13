@@ -7,12 +7,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+  }
 
 }
 
 .page-footer__logo {
   margin-top: 39px;
   margin-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+    margin-bottom: 60px;
+
+  }
 }
 
 .page-footer__media-list {
@@ -43,6 +52,11 @@
     height: 1px;
 
     background-color: $border-grey;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+
+    }
   }
 
   &::before {
@@ -57,6 +71,16 @@
     height: 1px;
 
     background-color: $border-grey;
+    @media (min-width: $tablet-width) {
+      display: none;
+
+    }
+  }
+  @media (min-width: $tablet-width) {
+    gap: 24px;
+    margin-top: 5px;
+    margin-left: 29px;
+
   }
 }
 
@@ -72,6 +96,12 @@
     background-color: $grey-media;
 
     mask-image: url("../img/page-footer-icon-vkontakte.svg");
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+
+      mask-image: url("../img/page-footer-icon-vkontakte-tablet.svg");
+    }
   }
 
   &--instagramm {
@@ -80,6 +110,13 @@
     background-color: $grey-media;
 
     mask-image: url("../img/page-footer-icon-instagramm.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+
+      mask-image: url("../img/page-footer-icon-instagramm-tablet.svg");
+    }
   }
 
   &--facebook {
@@ -88,6 +125,12 @@
     background-color: $grey-media;
 
     mask-image: url("../img/page-footer-icon-facebook.svg");
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
+
+      mask-image: url("../img/page-footer-icon-facebook-tablet.svg");
+    }
   }
 }
 
@@ -104,4 +147,28 @@
   font-size: 16px;
   font-weight: 400;
   color: $black-text;
+
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+    width: 200px;
+    margin-top: 20px;
+
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+
+  }
+}
+
+.page-footer__copyright span {
+  @media (min-width: $tablet-width) {
+    width: 115px;
+  }
+}
+
+.page-footer__copyright img {
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+
+  }
 }

@@ -1,4 +1,3 @@
-
 .page-main__type-of-products {
   margin-top: 20px;
 }
@@ -7,4 +6,11 @@
   width: 100%;
   margin-top: 27px;
   background-color: $additional-information-grey;
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 7px;
+
+  }
 }
