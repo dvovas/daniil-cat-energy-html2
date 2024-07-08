@@ -1,16 +1,35 @@
+.page-main {
+  @media (min-width: $desktop-width) {
+  margin-top: -123px;
+  background-image: url("../img/main-green-cat-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  }
+}
+
 .page-main__type-of-products {
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .page-main__additional-information {
+  display: flex;
+  flex-direction: column;
+
   width: 100%;
-  margin-top: 27px;
-  background-color: $additional-information-grey;
+  margin-top: 55px;
+
+  background-color: $darker-grey;
+
   @media (min-width: $tablet-width) {
+    margin-top: 50px;
     background-color: inherit;
   }
-  @media (min-width: $desktop-width) {
-    margin-top: 7px;
 
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
   }
 }

@@ -7,8 +7,9 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
-    background-color: rgba(0, 125, 215, 0);
+    background-color: transparent;
   }
 }
 
@@ -18,11 +19,10 @@
 
   @media (min-width: $tablet-width) {
   margin-top: 16px;
-
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 44px;
-
   }
 }
 
@@ -33,7 +33,6 @@
 
   @media (min-width :$tablet-width) {
     display: none;
-
   }
 }
 
@@ -58,6 +57,5 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-
   }
 }
