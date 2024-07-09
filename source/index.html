@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=dfd2b557-1c28-494d-b1fd-973989ba4029" type="text/javascript"></script>
+  <script src="./js/map.js" type="text/javascript"></script>
 </head>
 <body class="page__body">
 <header class="page-header container">
@@ -39,7 +41,7 @@
 <main class="page-main">
   <div class="preview-content">
     <div class=" preview-content__wrapper">
-      <div class="preview-content__wrapper-mobile">
+      <div class="preview-content__text-wrapper">
         <h1 class="preview-content__title">
           Функциональное питание для котов
         </h1>
@@ -101,48 +103,57 @@
 
   <section class=" additional-information page-main__additional-information">
     <h2 class="container additional-information__title section-header">Живой пример</h2>
-    <div class="additional-information__container">
-      <div class="container">
-        <p class="additional-information__paragraph">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="additional-information__list-wrapper">
-          <dl class="additional-information__list">
-            <div class="additional-information__wrapper">
-              <dt class="additional-information__name">Снижение веса</dt>
-              <dd class="additional-information__info">5 кг</dd>
-            </div>
-            <div class="additional-information__wrapper">
-              <dt class="additional-information__name">Затрачено времени</dt>
-              <dd class="additional-information__info">60 дней</dd>
-            </div>
-          </dl>
-          <p class="additional-information__info-paragraph">Затраты на питание: 15 000 РУБ. </p>
+    <div class="additional-information__container mobile-container">
+      <div class="desktop-container additional-information-desktop-flex">
+        <div class="tablet-container">
+          <p class="additional-information__paragraph">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="additional-information__list-wrapper">
+            <dl class="additional-information__list">
+              <div class="additional-information__wrapper">
+                <dt class="additional-information__name">Снижение веса</dt>
+                <dd class="additional-information__info">5 кг</dd>
+              </div>
+              <div class="additional-information__wrapper">
+                <dt class="additional-information__name">Затрачено времени</dt>
+                <dd class="additional-information__info">60 дней</dd>
+              </div>
+            </dl>
+            <p class="additional-information__info-paragraph">Затраты на питание: 15 000 РУБ. </p>
+          </div>
         </div>
-      </div>
-      <div class="additional-information__media-wrapper">
-        <picture class="additional-information-image">
-          <source media="(min-width: 768px)" srcset="img/additional-information-image_cat_tablet.png" width="590" height="511">
-          <img class="additional-information__image" src="./img/additional-information-image.png" width="280" height="232">
-        </picture>
-        <div class="additional-information__slider">
-          <span>Было</span>
-          <span>Стало</span>
+
+        <div class="additional-information__media-wrapper">
+          <div class="tablet-container">
+            <picture class="additional-information-image">
+              <source media="(min-width: 768px)" srcset="img/additional-information-image-tablet.png" width="590" height="511">
+              <img class="additional-information__image" src="./img/additional-information-image.png" width="280" height="232">
+            </picture>
+            <div class="additional-information__slider">
+              <span>Было</span>
+              <div class="additional-information-slider-tool">
+                <div class="additional-information-slider-line"></div> <div class="additional-information-slider-point"></div>
+              </div>
+              <span>Стало</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section class="address">
-    <div class="address__wrapper container">
+    <div class="address__wrapper containerr">
       <h3 class="address__title">Приглашаем <br>к сотрудничеству дилеров!</h3>
-      <address class="address__place-info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address class="address__place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
     </div>
-    <picture>
-      <source media="(min-width: 1440px)" srcset="img/adress-image-desktop.png" width="1440" height="400">
-      <source media="(min-width: 768px)" srcset="img/adress-image-tablet.png" width="768" height="400">
-      <img class="address__image" src="./img/address-image.png" width="320" height="362" alt="Изображение адреса офиса на карте">
-    </picture>
+    <div id="map" class="address__map"></div>
+<!--    <picture>-->
+<!--      <source media="(min-width: 1440px)" srcset="img/adress-image-desktop.png" width="1440" height="400">-->
+<!--      <source media="(min-width: 768px)" srcset="img/adress-image-tablet.png" width="768" height="400">-->
+<!--      <img class="address__image" src="./img/address-image.png" width="320" height="362" alt="Изображение адреса офиса на карте">-->
+<!--    </picture>-->
   </section>
 </main>
 

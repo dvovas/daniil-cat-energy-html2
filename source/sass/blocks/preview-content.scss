@@ -8,9 +8,22 @@
   font-weight: 400;
   color: $white;
 
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-right:  auto;
+    margin-left: auto;
+  }
+
   @media (min-width: $desktop-width) {
+    z-index: -1;
+
     width: 1440px;
-    margin-top: 123px;
+    padding-top: 123px;
+    padding-bottom: 190px;
+
+    background-image: url("../img/main-green-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
   }
 }
 
@@ -27,9 +40,10 @@
   }
 }
 
-.preview-content__wrapper-mobile {
+.preview-content__text-wrapper {
   display: flex;
   flex-direction: column;
+
   background-color: $preview-content-green;
   background-image: url("../img/main-green-cat.png");
   background-repeat: no-repeat;
@@ -55,7 +69,7 @@
   @media (min-width: $tablet-width) {
     align-self: start;
 
-    width: 414px;
+    width: 450px;
     margin-top: 50px;
 
     font-size: 60px;
@@ -99,12 +113,11 @@
     z-index: -1;
     left: 29px;
     margin-top: 20px;
-
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
-    top: -2px;
+    top: 121px;
     left: 558px;
   }
 }
@@ -118,7 +131,6 @@
     width: 244px;
     margin-top: 49px;
     margin-right: 0;
-
     margin-left: 0;
     padding: 17px 26px;
 

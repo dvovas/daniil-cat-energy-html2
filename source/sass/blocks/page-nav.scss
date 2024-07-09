@@ -55,7 +55,6 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 24px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -136,20 +135,20 @@
       content: "";
 
       position: absolute;
+      right: 0;
       bottom: 14px;
+      left: 0;
 
       width: calc(100% - 4px);
       height: 2px;
+      margin: auto;
 
       background-color: $primary;
-
     }
 
     @media (min-width: $desktop-width) {
       bottom: 16px;
-      width: calc(100% - 4px);
       background-color: $white;
-
     }
   }
 }

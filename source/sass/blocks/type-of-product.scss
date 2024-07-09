@@ -8,8 +8,8 @@
   position: relative;
 
   margin: 0;
-  padding-top: 30px;
-  padding-left: 91px;
+  padding-top: 0;
+  padding-left: 71px;
 
   font-size: 24px;
   font-weight: 400;
@@ -17,22 +17,23 @@
   color: $black;
   text-transform: uppercase;
 
+  &--pro {
+    @media (min-width: $desktop-width) {
+      padding-left: 60px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding-top: 77px;
-    padding-left: 54px;
+    padding-top: 0;
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 23px;
+    padding-top: 0;
+    padding-left: 18px;
     text-align: center;
-  }
-  
-  &--pro {
-    @media (min-width: $desktop-width) {
-      padding-left: 63px;
-    }
   }
 }
 
@@ -40,9 +41,9 @@
   position: relative;
 
   margin-top: 29px;
-  margin-right: 33px;
+  margin-right: 0;
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: 0;
 
   font-family: "Arial" , sans-serif;
   font-weight: 400;
@@ -74,8 +75,8 @@
     margin-top: 25px;
     margin-right: 0;
     margin-left: 0;
-    padding-right: 316px;
-    padding-left: 52px;
+    padding-right: 0;
+    padding-left: 0;
 
     font-size: 16px;
     line-height: 24px;
@@ -84,17 +85,18 @@
   @media (min-width: $desktop-width) {
     margin-top: 75px;
     margin-bottom: 0;
-    padding-right: 46px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .type-of-product__link {
   display: flex;
 
-  margin-top: 27px;
-  padding-top: 15px;
-  padding-bottom: 22px;
-  padding-left: 19px;
+  margin-top: 42px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 
   font-size: 16px;
   font-weight: 400;
@@ -123,18 +125,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 27px;
-    padding-top: 29px;
-    padding-bottom: 62px;
-    padding-left: 52px;
+    margin-top: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 5px;
-    padding-top: 26px;
-    padding-bottom: 64px;
+    margin-top: 31px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 }

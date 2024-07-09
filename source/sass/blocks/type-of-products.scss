@@ -8,7 +8,6 @@
 
 .type-of-products__list {
   display: flex;
-
   flex-direction: column;
   gap: 20px;
 
@@ -25,11 +24,12 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
-    margin-top: 267px;
+    margin-top: 77px;
   }
 }
 
 .type-of-products__item{
+  padding: 30px 33px 22px 20px;
   background-color: $basic-grey;
 
   &--slim {
@@ -47,6 +47,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 77px 316px 62px 52px;
+
     &--slim {
       background-position: right 62px center;
       background-size: 200px 211px;
@@ -59,6 +61,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 77px 46px 64px 52px;
+
     &--slim {
       background-position: left 52px top 41px;
       background-size: 100px 106px;
