@@ -8,11 +8,19 @@
   flex-direction: column;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .page-footer__logo {
   margin-top: 39px;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+    margin-bottom: 60px;
+  }
 }
 
 .page-footer__media-list {
@@ -25,6 +33,7 @@
 
   width: 100%;
   margin: 0;
+  margin-top: 32px;
   padding: 0;
   padding-top: 23px;
   padding-bottom: 28px;
@@ -43,6 +52,10 @@
     height: 1px;
 
     background-color: $border-grey;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &::before {
@@ -57,6 +70,17 @@
     height: 1px;
 
     background-color: $border-grey;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 24px;
+    margin-top: 5px;
+    margin-left: 29px;
+    padding: 0;
   }
 }
 
@@ -69,25 +93,46 @@
   &--vkontakte {
     width: 23px;
     height: 16px;
+
     background-color: $grey-media;
 
     mask-image: url("../img/page-footer-icon-vkontakte.svg");
+    mask-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
   }
 
   &--instagramm {
     width: 16px;
     height: 16px;
+
     background-color: $grey-media;
 
     mask-image: url("../img/page-footer-icon-instagramm.svg");
+    mask-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   &--facebook {
     width: 13px;
     height: 20px;
+
     background-color: $grey-media;
 
     mask-image: url("../img/page-footer-icon-facebook.svg");
+    mask-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 30px;
+    }
   }
 }
 
@@ -104,4 +149,26 @@
   font-size: 16px;
   font-weight: 400;
   color: $black-text;
+
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.page-footer__copyright span {
+  @media (min-width: $tablet-width) {
+    width: 115px;
+  }
+}
+
+.page-footer__copyright img {
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }

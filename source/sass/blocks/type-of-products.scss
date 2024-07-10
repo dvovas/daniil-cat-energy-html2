@@ -1,3 +1,10 @@
+.type-of-products {
+  @media (min-width: $desktop-width) {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .type-of-products__list {
   display: flex;
@@ -9,8 +16,61 @@
 
   list-style-type: none;
 
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    margin-top: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 77px;
+  }
 }
 
 .type-of-products__item{
+  padding: 30px 33px 22px 20px;
   background-color: $basic-grey;
+
+  &--slim {
+    background-image: url("../img/type-of-product-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: top 21px left 22px;
+    background-size: 50px 53px;
+  }
+
+  &--pro {
+    background-image: url("../img/type-of-product-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: top 24px left 13px;
+    background-size: 67px 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 62px 52px;
+
+    &--slim {
+      background-position: right 62px center;
+      background-size: 200px 211px;
+    }
+
+    &--pro {
+      background-position: right 30px top 91px;
+      background-size: 268px 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 46px 64px 52px;
+
+    &--slim {
+      background-position: left 52px top 41px;
+      background-size: 100px 106px;
+    }
+
+    &--pro {
+      background-position: left 33px top 47px;
+      background-size: 134px 100px;
+    }
+  }
 }

@@ -5,11 +5,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=dfd2b557-1c28-494d-b1fd-973989ba4029" type="text/javascript"></script>
+  <script src="./js/map.js" type="text/javascript"></script>
 </head>
 <body class="page__body">
 <header class="page-header container">
   <a class="page-header__logo">
-    <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип сайта Cat Energy">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+      <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип сайта Cat Energy">
+    </picture>
   </a>
   <a class="page-header__logo-mobile">
     <img src="img/logo-mobile-text.svg" width="101" height="18" alt="">
@@ -20,7 +26,7 @@
   <nav class="page-nav">
     <ul class="page-nav__list">
       <li class="page-nav__item">
-        <a class="page-nav__link">Главная</a>
+        <a class="page-nav__link page-nav__link--active">Главная</a>
       </li>
       <li class="page-nav__item">
         <a class="page-nav__link" href="#">Каталог продукции</a>
@@ -31,32 +37,41 @@
     </ul>
   </nav>
 </header>
+
 <main class="page-main">
   <div class="preview-content">
-    <div class="container preview-content__wrapper">
-      <h1 class="preview-content__title">
-        Функциональное питание для котов
-      </h1>
-      <p class="preview-content__slogan">Занялся собой? Займись котом!</p>
-      <img class="preview-content__image" src="img/mobile-preview-content.svg" width="280" height="270" alt="Превью корма для кота">
+    <div class=" preview-content__wrapper">
+      <div class="preview-content__text-wrapper">
+        <h1 class="preview-content__title">
+          Функциональное питание для котов
+        </h1>
+        <p class="preview-content__slogan">Занялся собой? Займись котом!</p>
+      </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/mobile-preview-content-desktop.png" width="552" height="499">
+        <source media="(min-width: 768px)" srcset="img/mobile-preview-content-tablet.png" width="709" height="609">
+        <img class="preview-content__image" src="img/mobile-preview-content.png" width="280" height="270" alt="Превью корма для кота">
+      </picture>
+
       <a class="preview-content__link button " href="#">Подобрать программу</a>
     </div>
   </div>
+
   <div class="container">
     <section class="type-of-products page-main__type-of-products">
       <h2 class="visually-hidden">Виды питания</h2>
       <ul class="type-of-products__list">
-        <li class="type-of-products__item type-of-product">
+        <li class="type-of-products__item type-of-product type-of-products__item--slim">
           <h3 class="type-of-product__header type-of-product__header--slim">Похудение</h3>
-          <p class="type-of-product__paragraph">
+          <p class="type-of-product__paragraph type-of-product__paragraph--slim">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
             Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <a class="type-of-product__link" href="#">Каталог slim</a>
         </li>
-        <li class="type-of-products__item type-of-product">
+        <li class="type-of-products__item type-of-product type-of-products__item--pro">
           <h3 class="type-of-product__header type-of-product__header--pro">Набор массы</h3>
-          <p class="type-of-product__paragraph">
+          <p class="type-of-product__paragraph type-of-product__paragraph--pro">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
@@ -64,60 +79,79 @@
         </li>
       </ul>
     </section>
+
     <section class="advantages-information advantages-information__wrapper">
       <div>
         <h2 class="advantages-information__title section-header">Как это работает</h2>
         <ol class="advantages-information__list">
-          <li class="advantages-information__item advantages-information__item--leaf">
+          <li class="advantages-information__item advantages-information__item--leaf advantages-information__item--counter">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
-          <li class="advantages-information__item advantages-information__item--water">
+          <li class="advantages-information__item advantages-information__item--water advantages-information__item--counter">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
-          <li class="advantages-information__item advantages-information__item--tools">
+          <li class="advantages-information__item advantages-information__item--tools advantages-information__item--counter">
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
-          <li class="advantages-information__item advantages-information__item--time">
+          <li class="advantages-information__item advantages-information__item--time advantages-information__item--counter">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ol>
       </div>
     </section>
   </div>
-  <section class="additional-information page-main__additional-information">
-    <div class="container">
-      <h2 class="additional-information__title section-header">Живой пример</h2>
-      <p class="additional-information__paragraph">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок!
-        При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <dl class="additional-information__list">
-        <div class="additional-information__wrapper">
-          <dt class="additional-information__name">снижение <br> веса</dt>
-          <dd class="additional-information__info">5 КГ</dd>
+
+  <section class=" additional-information page-main__additional-information">
+    <h2 class="container additional-information__title section-header">Живой пример</h2>
+    <div class="additional-information__container container__mobile">
+      <div class="container__desktop container__desktop__flex">
+        <div class="container__tablet">
+          <p class="additional-information__paragraph">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="additional-information__list-wrapper">
+            <dl class="additional-information__list">
+              <div class="additional-information__wrapper">
+                <dt class="additional-information__name">Снижение веса</dt>
+                <dd class="additional-information__info">5 кг</dd>
+              </div>
+              <div class="additional-information__wrapper">
+                <dt class="additional-information__name">Затрачено времени</dt>
+                <dd class="additional-information__info">60 дней</dd>
+              </div>
+            </dl>
+            <p class="additional-information__info-paragraph">Затраты на питание: 15 000 РУБ. </p>
+          </div>
         </div>
-        <div class="additional-information__wrapper">
-          <dt class="additional-information__name">затрачено <br>времени</dt>
-          <dd class="additional-information__info">60 ДНЕЙ</dd>
+
+        <div class="additional-information__media-wrapper">
+          <div class="container__tablet">
+            <picture class="additional-information__image">
+              <source media="(min-width: 768px)" srcset="img/additional-information-image-tablet.png" width="590" height="511">
+              <img class="additional-information__image-block" src="./img/additional-information-image.png" width="280" height="232">
+            </picture>
+            <div class="additional-information__slider">
+              <span>Было</span>
+              <div class="additional-information__slider-line">
+                <div class="additional-information__slider-point"></div>
+              </div>
+              <span>Стало</span>
+            </div>
+          </div>
         </div>
-      </dl>
-      <p class="additional-information__info-paragraph">Затраты на питание: 15 000 РУБ. </p>
-      <img class="additional-information__image" src="./img/additional-information-image.png" width="280" height="232">
-      <div class="additional-information__slider">
-        <span>Было</span>
-        <span>Стало</span>
       </div>
     </div>
   </section>
+
   <section class="address">
-    <div class="address__wrapper container">
+    <div class="address__wrapper">
       <h3 class="address__title">Приглашаем <br>к сотрудничеству дилеров!</h3>
-      <address class="address__place-info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address class="address__place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
     </div>
-    <img class="address__image" src="./img/address-image.png" width="320" height="362" alt="Изображение адреса офиса на карте">
+    <div id="map" class="address__map"></div>
   </section>
 </main>
+
 <footer class="page-footer">
   <div class="page-footer__wrapper container">
     <img class="page-footer__logo" src="./img/logo-mobile-text.svg" width="128" height="24">

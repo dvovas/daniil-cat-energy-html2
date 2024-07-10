@@ -1,4 +1,78 @@
 .container {
-  margin-right: 20px;
-  margin-left: 20px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    margin: 0 auto;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  &__mobile {
+    min-width: 320px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-top: 40px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 75px;
+    }
+  }
+
+  &__tablet {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+
+      width: 768px;
+      margin: 0 auto;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__desktop {
+    @media (min-width: $desktop-width) {
+      min-width: $desktop-width;
+      margin: 0 auto;
+      padding-right: 110px;
+      padding-left: 110px;
+    }
+  }
+
+  &__desktop__flex {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      gap: 133px;
+    }
+  }
 }
+
+
+
