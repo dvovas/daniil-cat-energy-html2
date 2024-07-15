@@ -24,6 +24,14 @@
   @media (min-width: $desktop-width) {
     margin-top: 44px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-mobile {
@@ -33,6 +41,14 @@
 
   @media (min-width :$tablet-width) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
