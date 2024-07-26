@@ -14,10 +14,10 @@
 }
 
 .page-footer__logo {
-  background-image: url("../img/page-footer-text-logo.svg");
-  background-repeat: no-repeat;
-  width: 128px;
-  height: 24px;
+  //background-image: url("../img/page-footer-text-logo.svg");
+  //background-repeat: no-repeat;
+  //width: 128px;
+  //height: 24px;
   margin-top: 39px;
   margin-bottom: 0;
   cursor: pointer;
@@ -25,11 +25,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 63px;
     margin-bottom: 60px;
-    width: 234px;
+    //width: 234px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 174px;
+    //width: 174px;
   }
 
   &:hover {

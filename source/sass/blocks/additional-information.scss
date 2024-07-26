@@ -315,14 +315,14 @@
   background-color: transparent;
   cursor: pointer;
 
-  &:active {
-    border: none;
-
-  }
-
   &:hover {
     padding-bottom: 0;
     border-bottom: 1px solid rgba($black, 0.4);
+  }
+
+  &:active {
+    padding-bottom: 1px;
+    border: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -330,14 +330,14 @@
     border-bottom: 1px dotted rgba($black, 0.1);
     font-size: 20px;
 
-    &:active {
-      border: none;
-      padding-bottom: 6px;
-    }
-
     &:hover {
       padding-bottom: 5px;
       border-bottom: 1px solid rgba($black, 0.4);
+    }
+
+    &:active {
+      border: none;
+      padding-bottom: 6px;
     }
   }
 }
