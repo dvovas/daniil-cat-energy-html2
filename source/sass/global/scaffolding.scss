@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  /* stylelint-disable-next-line declaration-no-important -- Redefinition standard browser rule */
+  -webkit-tap-highlight-color: transparent !important;
   //outline: 1px solid red;
 }
 

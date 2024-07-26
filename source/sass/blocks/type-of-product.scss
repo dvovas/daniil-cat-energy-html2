@@ -104,16 +104,15 @@
   color: $black;
   text-transform: uppercase;
 
-  &::after {
+  &::before {
+    position: relative;
     content: "";
-
+    width: 18px;
+    height: 2px;
+    background-color: $black;
     align-self: center;
-
-    width: 32px;
-    height: 12px;
+    order: 2;
     margin-left: 16px;
-
-    background-image: url("../img/type-of-product-link-arrow.svg");
 
     @media (min-width: $tablet-width) {
       margin-left: 25px;
@@ -122,6 +121,28 @@
     @media (min-width: $desktop-width) {
       margin-left: 27px;
     }
+
+  }
+
+  &::after {
+    content: "";
+    align-self: center;
+
+    width: 8px;
+    height: 12px;
+    order: 3;
+    margin-left: -1px;
+
+    background-image: url("../img/link-arrow-polygon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    width: 26px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

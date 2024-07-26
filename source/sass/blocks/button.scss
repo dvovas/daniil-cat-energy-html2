@@ -10,4 +10,13 @@
 
   background-color: $primary;
   border: none;
+
+  &:hover {
+    background-color: $hover-green;
+  }
+
+  &:active {
+    background-color: $hover-green;
+    color: rgba($white, 0.3);
+  }
 }

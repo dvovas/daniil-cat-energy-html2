@@ -10,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    z-index: 1;
   }
 }
 
@@ -23,6 +24,17 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 44px;
+    //cursor: pointer;
+    //width: 202px;
+    //height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -33,6 +45,14 @@
 
   @media (min-width :$tablet-width) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

@@ -33,14 +33,14 @@
   background-color: $basic-grey;
 
   &--slim {
-    background-image: url("../img/type-of-product-cat-slim.svg");
+    background-image: url("../img/sprites.svg#slim-cat");
     background-repeat: no-repeat;
     background-position: top 21px left 22px;
     background-size: 50px 53px;
   }
 
   &--pro {
-    background-image: url("../img/type-of-product-cat-pro.svg");
+    background-image: url("../img/sprites.svg#pro-cat");
     background-repeat: no-repeat;
     background-position: top 24px left 13px;
     background-size: 67px 50px;

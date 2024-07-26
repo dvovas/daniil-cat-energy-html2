@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    z-index: -1;
+    z-index: 0;
 
     width: 1440px;
     padding-top: 123px;
@@ -24,6 +24,11 @@
     background-image: url("../img/main-green-cat-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-green-cat-desktop@2x.jpg");
+      background-size: 720px 694px;
+    }
   }
 }
 
@@ -45,9 +50,14 @@
   flex-direction: column;
 
   background-color: $preview-content-green;
-  background-image: url("../img/main-green-cat.png");
+  background-image: url("../img/main-green-cat.jpg");
   background-repeat: no-repeat;
   background-position: top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-green-cat@2x.jpg");
+    background-size: 320px 302px;
+  }
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -110,7 +120,7 @@
 
   @media (min-width: $tablet-width) {
   position: absolute;
-    z-index: -1;
+    z-index: 0;
     left: 29px;
     margin-top: 20px;
   }
@@ -136,6 +146,7 @@
 
     font-size: 20px;
     line-height: 20px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {

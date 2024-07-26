@@ -7,8 +7,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=dfd2b557-1c28-494d-b1fd-973989ba4029" type="text/javascript"></script>
   <script src="./js/map.js" type="text/javascript"></script>
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body class="page__body">
+
 <header class="page-header container">
   <a class="page-header__logo">
     <picture>
@@ -48,12 +53,12 @@
         <p class="preview-content__slogan">Занялся собой? Займись котом!</p>
       </div>
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/mobile-preview-content-desktop.png" width="552" height="499">
-        <source media="(min-width: 768px)" srcset="img/mobile-preview-content-tablet.png" width="709" height="609">
-        <img class="preview-content__image" src="img/mobile-preview-content.png" width="280" height="270" alt="Превью корма для кота">
+        <source media="(min-width: 1440px)" srcset="img/mobile-preview-content-desktop.png 1x, img/mobile-preview-content-desktop@2x.png 2x" width="552" height="499">
+        <source media="(min-width: 768px)" srcset="img/mobile-preview-content-tablet.png 1x, img/mobile-preview-content-tablet@2x.png 2x" width="709" height="609">
+        <img class="preview-content__image" src="img/mobile-preview-content.png" srcset="img/mobile-preview-content@2x.png 2x" width="280" height="270" alt="Превью корма для кота">
       </picture>
 
-      <a class="preview-content__link button " href="#">Подобрать программу</a>
+      <a class="preview-content__link button" href="#">Подобрать программу</a>
     </div>
   </div>
 
@@ -67,7 +72,9 @@
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
             Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="type-of-product__link" href="#">Каталог slim</a>
+          <a class="type-of-product__link" href="#">
+            Каталог slim
+          </a>
         </li>
         <li class="type-of-products__item type-of-product type-of-products__item--pro">
           <h3 class="type-of-product__header type-of-product__header--pro">Набор массы</h3>
@@ -75,7 +82,9 @@
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="type-of-product__link" href="#">Каталог pro</a>
+          <a class="type-of-product__link" href="#">
+            Каталог pro
+          </a>
         </li>
       </ul>
     </section>
@@ -127,34 +136,36 @@
         <div class="additional-information__media-wrapper">
           <div class="container__tablet">
             <picture class="additional-information__image">
-              <source media="(min-width: 768px)" srcset="img/additional-information-image-tablet.png" width="590" height="511">
-              <img class="additional-information__image-block" src="./img/additional-information-image.png" width="280" height="232">
+              <source media="(min-width: 768px)" srcset="img/additional-information-image-tablet.png 1x, img/additional-information-image-tablet@2x.png 2x" width="590" height="511">
+              <img class="additional-information__image-block" src="./img/additional-information-image.png" srcset="./img/additional-information-image@2x.png 2x" width="280" height="232">
             </picture>
             <div class="additional-information__slider">
-              <span>Было</span>
+              <button class="additional-information__slider--button">Было</button>
               <div class="additional-information__slider-line">
                 <div class="additional-information__slider-point"></div>
               </div>
-              <span>Стало</span>
+              <button class="additional-information__slider--button">Стало</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="address">
-    <div class="address__wrapper">
-      <h3 class="address__title">Приглашаем <br>к сотрудничеству дилеров!</h3>
-      <address class="address__place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-    </div>
-    <div id="map" class="address__map"></div>
-  </section>
 </main>
+  <footer class="page-footer">
 
-<footer class="page-footer">
+  <div class="page-footer__address">
+    <div class="page-footer__address--wrapper">
+      <h3 class="page-footer__address--title">Приглашаем <br>к сотрудничеству дилеров!</h3>
+      <address class="page-footer__address--place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+    </div>
+    <div id="map" class="page-footer__address--map"></div>
+  </div>
+
   <div class="page-footer__wrapper container">
-    <img class="page-footer__logo" src="./img/logo-mobile-text.svg" width="128" height="24">
+    <a class="page-footer__logo">
+      <img src="./img/logo-mobile-text.svg" width="128" height="24">
+    </a>
     <ul class="page-footer__media-list">
       <li class="page-footer__media-item page-footer__media-item--vkontakte">
         <a class="page-footer__media-link page-footer__media-link--vkontakte" href="#">
@@ -174,7 +185,7 @@
     </ul>
     <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
       <span>HTML Academy</span>
-      <img class="page-footer__copyright-logo" src="img/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
+      <div class="page-footer__copyright-logo"></div>
     </a>
   </div>
 </footer>
