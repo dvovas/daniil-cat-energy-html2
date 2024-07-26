@@ -10,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    z-index: 1;
   }
 }
 
@@ -23,6 +24,9 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 44px;
+    //cursor: pointer;
+    //width: 202px;
+    //height: 59px;
   }
 
   &:hover {

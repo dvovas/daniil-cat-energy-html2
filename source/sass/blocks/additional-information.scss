@@ -269,7 +269,7 @@
   margin-right: 40px;
   margin-left: 40px;
   padding-top: 20px;
-  padding-bottom: 46px;
+  padding-bottom: 44px;
 
   font-size: 16px;
   line-height: 20px;
@@ -307,26 +307,40 @@
   color: $black;
   text-transform: uppercase;
   padding: 0;
+  padding-bottom: 1px;
   border: none;
   font-family: "Oswald" , sans-serif;
   font-size: 16px;
   line-height: 20px;
   background-color: transparent;
 
+  &:active {
+    border: none;
+
+  }
+
+  &:hover {
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba($black, 0.4);
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
     border-bottom: 1px dotted rgba($black, 0.1);
     font-size: 20px;
+
+    &:active {
+      border: none;
+      padding-bottom: 6px;
+    }
+
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgba($black, 0.4);
+    }
   }
 
-  &:hover {
-    border-bottom: 1px solid rgba($black, 0.4);
-  }
 
-  &:active {
-    border: none;
-    padding-bottom: 6px;
-  }
 }
 
 .additional-information__slider-line {
@@ -375,10 +389,10 @@
     border: 12px solid $white;
     border-radius: 9999px;
     outline: 1px solid $special-grey;
-  }
 
-  &:hover {
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
   }
 
   &:active {

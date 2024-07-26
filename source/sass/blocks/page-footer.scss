@@ -162,7 +162,7 @@
   margin-top: 13px;
   margin-bottom: 22px;
 
-  font-family: "Arial" , sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: $black-text;
@@ -177,6 +177,10 @@
     margin-top: 23px;
   }
 
+  &:hover .page-footer__copyright-logo {
+    background-color: $primary;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -186,19 +190,23 @@
       width: 115px;
     }
   }
+}
 
-  &-logo {
-    fill: $grey-media;
+  .page-footer__copyright-logo {
+    width: 27px;
+    height: 34px;
+    mask-image: url("../img/footer-academy-logo.svg");
+    background-color: $grey-media;
     @media (min-width: $tablet-width) {
       margin-top: 5px;
     }
 
-    &:hover {
-      fill: $primary;
-    }
-
     &:active {
-      fill: $primary;
+      background-color: $primary;
     }
   }
-}
+
+
+
+
+
