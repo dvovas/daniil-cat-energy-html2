@@ -15,7 +15,7 @@
 <body class="page__body">
 
 <header class="page-header container">
-  <a class="page-header__logo" href="#">
+  <a class="page-header__logo">
     <picture>
       <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
@@ -151,19 +151,19 @@
       </div>
     </div>
   </section>
-
-  <section class="address">
-    <div class="address__wrapper">
-      <h3 class="address__title">Приглашаем <br>к сотрудничеству дилеров!</h3>
-      <address class="address__place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-    </div>
-    <div id="map" class="address__map"></div>
-  </section>
 </main>
+  <footer class="page-footer">
 
-<footer class="page-footer">
+  <div class="page-footer__address">
+    <div class="page-footer__address--wrapper">
+      <h3 class="page-footer__address--title">Приглашаем <br>к сотрудничеству дилеров!</h3>
+      <address class="page-footer__address--place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+    </div>
+    <div id="map" class="page-footer__address--map"></div>
+  </div>
+
   <div class="page-footer__wrapper container">
-    <img class="page-footer__logo" src="./img/logo-mobile-text.svg" width="128" height="24">
+    <a class="page-footer__logo"></a>
     <ul class="page-footer__media-list">
       <li class="page-footer__media-item page-footer__media-item--vkontakte">
         <a class="page-footer__media-link page-footer__media-link--vkontakte" href="#">

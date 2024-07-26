@@ -313,6 +313,7 @@
   font-size: 16px;
   line-height: 20px;
   background-color: transparent;
+  cursor: pointer;
 
   &:active {
     border: none;
@@ -339,8 +340,6 @@
       border-bottom: 1px solid rgba($black, 0.4);
     }
   }
-
-
 }
 
 .additional-information__slider-line {
@@ -375,6 +374,7 @@
 
   background-color: $primary;
   border-radius: 5px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: -13px;
