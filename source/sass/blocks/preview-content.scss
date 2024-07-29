@@ -20,15 +20,19 @@
     width: 1440px;
     padding-top: 123px;
     padding-bottom: 190px;
-
+    /* stylelint-disable */
     background-image: url("../img/main-green-cat-desktop.jpg");
+    background-image:
+      image-set(
+          "../img/main-green-cat-desktop@2x.webp" 2x type("image/webp"),
+          "../img/main-green-cat-desktop.webp" 1x type("image/webp"),
+          "../img/main-green-cat-desktop@2x.jpg" 2x type("image/jpeg"),
+          "../img/main-green-cat-desktop.jpg" 1x type("image/jpeg")
+      );
+    /* stylelint-enable */
     background-repeat: no-repeat;
     background-position: top right;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-green-cat-desktop@2x.jpg");
-      background-size: 720px 694px;
-    }
+    background-size: 720px 694px;
   }
 }
 
@@ -51,13 +55,15 @@
 
   background-color: $preview-content-green;
   background-image: url("../img/main-green-cat.jpg");
+  background-image:
+    image-set(
+      "../img/main-green-cat@2x.webp" 2x type("image/webp"),
+      "../img/main-green-cat.webp" 1x type("image/webp"),
+      "../img/main-green-cat@2x.jpg" 2x type("image/jpeg"),
+      "../img/main-green-cat.jpg" 1x type("image/jpeg"));
   background-repeat: no-repeat;
   background-position: top;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-green-cat@2x.jpg");
-    background-size: 320px 302px;
-  }
+  background-size: 320px 302px;
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -138,6 +144,8 @@
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
+    z-index: 1;
+
     width: 244px;
     margin-top: 49px;
     margin-right: 0;
@@ -146,7 +154,6 @@
 
     font-size: 20px;
     line-height: 20px;
-    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {

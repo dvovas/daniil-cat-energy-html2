@@ -123,16 +123,16 @@
   color: $black;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
-    color: $white;
-  }
-
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
   }
 }
 

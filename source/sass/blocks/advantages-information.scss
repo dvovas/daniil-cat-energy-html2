@@ -95,19 +95,23 @@
   }
 
   &--leaf::after {
-    background-image: url("../img/advantages-item-leaf.svg");
+    background-image: url("../img/sprite.svg#advantages-item-leaf");
+    background-size: 26px 28px;
   }
 
   &--water::after {
-    background-image: url("../img/advantages-item-water.svg");
+    background-image: url("../img/sprite.svg#advantages-item-water");
+    background-size: 30px 31px;
   }
 
   &--tools::after {
-    background-image: url("../img/advantages-item-tools.svg");
+    background-image: url("../img/sprite.svg#advantages-item-tools");
+    background-size: 26px 30px;
   }
 
   &--time::after {
-    background-image: url("../img/advantages-item-time.svg");
+    background-image: url("../img/sprite.svg#advantages-item-time");
+    background-size: 25px 30px;
   }
 
   @media (min-width: $tablet-width) {
