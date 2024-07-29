@@ -6,11 +6,21 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^10.4.17",
     "browser-sync": "^2.29.3",
+    "del": "^7.1.0",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-libsquoosh": "^1.1.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^5.0.0",
     "postcss": "^8.4.33",
+    "postcss-csso": "^6.0.1",
     "prettier": "^2.8.7",
     "stylelint": "^14.16.1",
     "stylelint-config-clean-order": "^5.0.0",
@@ -23,7 +33,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"**/*.{css,scss}\" --fix",
     "lint": "npm run editorconfig",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
@@ -44,5 +54,6 @@
   "engines": {
     "node": "^20"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {}
 }

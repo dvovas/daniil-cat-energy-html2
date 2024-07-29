@@ -31,9 +31,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 162px;
     padding-top: 0;
     padding-left: 0;
-    margin-left: 162px;
   }
 }
 
@@ -105,14 +105,18 @@
   text-transform: uppercase;
 
   &::before {
-    position: relative;
     content: "";
-    width: 18px;
-    height: 2px;
-    background-color: $black;
+
+    position: relative;
+
     align-self: center;
     order: 2;
+
+    width: 18px;
+    height: 2px;
     margin-left: 16px;
+
+    background-color: $black;
 
     @media (min-width: $tablet-width) {
       margin-left: 25px;
@@ -126,15 +130,17 @@
 
   &::after {
     content: "";
+
     align-self: center;
+    order: 3;
 
     width: 8px;
     height: 12px;
-    order: 3;
     margin-left: -1px;
 
-    background-image: url("../img/link-arrow-polygon.svg");
+    background-image: url("../img/sprite.svg#link-arrow-polygon");
     background-repeat: no-repeat;
+    background-size: 7px 12px;
   }
 
   &:hover::before {
