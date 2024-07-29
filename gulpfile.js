@@ -27,7 +27,7 @@ export const styles = () => {
     ]))
     .pipe(rename("styles.min.css"))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
+    .pipe(gulp.dest('build/css'))
     .pipe(browser.stream());
 }
 
@@ -52,18 +52,18 @@ export const scripts = () => {
 //Images
 
 export const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png,svg}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
 
 export const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png,svg}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
 }
 
 export const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('source/img/*.{jpg,png}')
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest('build/img'))
 }
@@ -97,6 +97,7 @@ export const copy = (done) => {
   gulp.src([
       'source/fonts/*.{woff,woff2}',
       'source/img/favicon/*.ico',
+      'source/manifest.webmanifest',
     ], {
       base: 'source'
     }

@@ -20,23 +20,19 @@
     width: 1440px;
     padding-top: 123px;
     padding-bottom: 190px;
-
+    /* stylelint-disable */
+    background-image: url("../img/main-green-cat-desktop.jpg");
     background-image:
       image-set(
-          "../img/main-green-cat-desktop.webp" type("image/webp"),
-          "../img/main-green-cat-desktop.jpg" type("image/jpeg")
+          "../img/main-green-cat-desktop@2x.webp" 2x type("image/webp"),
+          "../img/main-green-cat-desktop.webp" 1x type("image/webp"),
+          "../img/main-green-cat-desktop@2x.jpg" 2x type("image/jpeg"),
+          "../img/main-green-cat-desktop.jpg" 1x type("image/jpeg")
       );
+    /* stylelint-enable */
     background-repeat: no-repeat;
     background-position: top right;
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        image-set(
-            url("../img/main-green-cat-desktop@2x.webp") type("image/webp"),
-            url("../img/main-green-cat-desktop@2x.jpg") type("image/jpg")
-        );
-      background-size: 720px 694px;
-    }
+    background-size: 720px 694px;
   }
 }
 
@@ -58,19 +54,17 @@
   flex-direction: column;
 
   background-color: $preview-content-green;
-  background-image: image-set(
-      url("../img/main-green-cat.webp") type("image/webp"),
-    url("../img/main-green-cat.jpg") type("image/jpeg"));
+  background-image: url("../img/main-green-cat.jpg");
+  background-image:
+    image-set(
+      "../img/main-green-cat@2x.webp" 2x type("image/webp"),
+      "../img/main-green-cat.webp" 1x type("image/webp"),
+      "../img/main-green-cat@2x.jpg" 2x type("image/jpeg"),
+      "../img/main-green-cat.jpg" 1x type("image/jpeg"));
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 320px 302px;
 
-  @media (min-resolution: 2dppx) {
-    background-image:
-      image-set(
-          url("../img/main-green-cat@2x.webp") type("image/webp"),
-          url("../img/main-green-cat@2x.jpg") type("image/jpeg"));
-    background-size: 320px 302px;
-  }
 
   @media (min-width: $tablet-width) {
     background: none;
