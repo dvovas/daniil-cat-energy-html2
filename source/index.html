@@ -16,7 +16,7 @@
 
 <body class="page__body">
 
-<header class="page-header container">
+<header class="page-header container page-header--main-page">
   <a class="page-header__logo">
     <picture>
       <source media="(min-width: 1440px)" srcset="img/sprite.svg#logo-desktop" width="202" height="59">
@@ -33,13 +33,13 @@
   <nav class="page-nav">
     <ul class="page-nav__list">
       <li class="page-nav__item">
-        <a class="page-nav__link page-nav__link-main-page page-nav__link--active page-nav__link--active-main-page">Главная</a>
+        <a class="page-nav__link page-nav__link--main-page page-nav__link--active">Главная</a>
       </li>
       <li class="page-nav__item">
-        <a class="page-nav__link page-nav__link-main-page" href="catalog.html">Каталог продукции</a>
+        <a class="page-nav__link page-nav__link--main-page" href="catalog.html">Каталог продукции</a>
       </li>
       <li class="page-nav__item">
-        <a class="page-nav__link page-nav__link-main-page" href="#">Подбор программы</a>
+        <a class="page-nav__link page-nav__link--main-page" href="#">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -117,9 +117,9 @@
 
   <section class=" additional-information page-main__additional-information">
     <h2 class="container additional-information__title section-header">Живой пример</h2>
-    <div class="additional-information__container container__mobile">
-      <div class="container__desktop container__desktop__flex">
-        <div class="container__tablet">
+    <div class="additional-information__container">
+      <div class="additional-information__container--flex">
+        <div class="container container--flex ">
           <p class="additional-information__paragraph">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
@@ -139,7 +139,7 @@
         </div>
 
         <div class="additional-information__media-wrapper">
-          <div class="container__tablet">
+          <div class="container--flex">
             <picture class="additional-information__image">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/additional-information-image-tablet.webp 1x, img/additional-information-image-tablet@2x.webp 2x" width="590" height="511">
               <source type="image/webp" srcset="./img/additional-information-image.webp 1x, ./img/additional-information-image@2x.webp 2x" width="280" height="232">
@@ -159,16 +159,16 @@
     </div>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer--main-page">
 
   <div class="page-footer__address">
-    <div class="page-footer__address--arranger">
-      <div class="page-footer__address--wrapper">
-        <h3 class="page-footer__address--title">Приглашаем <br>к сотрудничеству дилеров!</h3>
-        <address class="page-footer__address--place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+    <div class="page-footer__address-arranger">
+      <div class="page-footer__address-wrapper">
+        <h3 class="page-footer__address-title">Приглашаем <br>к сотрудничеству дилеров!</h3>
+        <address class="page-footer__address-place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
       </div>
     </div>
-    <div id="map" class="page-footer__address--map"></div>
+    <div id="map" class="page-footer__address-map"></div>
   </div>
 
   <div class="page-footer__wrapper container">
