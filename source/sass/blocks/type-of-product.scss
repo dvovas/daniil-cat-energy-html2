@@ -1,6 +1,51 @@
 .type-of-product {
+  padding: 30px 33px 22px 20px;
+  background-color: $basic-grey;
+
+  &--slim {
+    background-image: url("../img/sprite.svg#type-of-product-cat-slim");
+    background-repeat: no-repeat;
+    background-position: top 21px left 22px;
+    background-size: 50px 53px;
+  }
+
+  &--pro {
+    background-image: url("../img/sprite.svg#type-of-product-cat-pro");
+    background-repeat: no-repeat;
+    background-position: top 24px left 13px;
+    background-size: 67px 50px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 570px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 62px 52px;
+
+    &--slim {
+      background-position: right 62px center;
+      background-size: 199px 211px;
+    }
+
+    &--pro {
+      background-position: right 30px top 91px;
+      background-size: 268px 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 46px 64px 52px;
+
+    &--slim {
+      background-position: left 52px top 41px;
+      background-size: 100px 106px;
+    }
+
+    &--pro {
+      background-position: left 33px top 47px;
+      background-size: 134px 100px;
+    }
   }
 }
 
