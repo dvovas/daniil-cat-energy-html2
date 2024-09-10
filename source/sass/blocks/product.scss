@@ -57,11 +57,10 @@
   flex-direction: column;
   gap: 15px;
 
-  width: 140px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     gap: 19px;
-    width: 251px;
     margin: 0 auto;
     margin-bottom: 41px;
 
@@ -69,7 +68,6 @@
 
   @media (min-width: $desktop-width) {
     gap: 24px;
-    width: 170px;
     margin: 0;
     margin-bottom: 40px;
   }
