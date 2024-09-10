@@ -22,7 +22,7 @@
     "button button button";
     grid-template-columns: max-content 1fr max-content;
 
-    padding-top: 26px;
+    padding-top: 28px;
     padding-right: 38px;
     padding-bottom: 28px;
     padding-left: 38px;
@@ -57,13 +57,10 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    align-content: center;
     padding-left: 0;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    align-content: center;
   }
 }
 
@@ -78,7 +75,9 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 2px;
+    align-content: center;
+
+    margin-top: 0;
     margin-right: 43px;
 
     font-size: 16px;
@@ -86,7 +85,6 @@
     text-align: right;
   }
   @media (min-width: $desktop-width) {
-    margin-top: 14px;
     margin-right: 0;
     text-align: left;
   }
@@ -104,13 +102,13 @@
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    margin-top: 2px;
+    align-content: center;
+    margin-top: 0;
     font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 14px;
     text-align: left;
   }
 }
