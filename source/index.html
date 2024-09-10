@@ -10,11 +10,13 @@
   <link rel="icon" href="img/favicon/favicon.ico">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="../fonts/oswald-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/oswald-500.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
 
-<header class="page-header container">
+<header class="page-header container page-header--main-page">
   <a class="page-header__logo">
     <picture>
       <source media="(min-width: 1440px)" srcset="img/sprite.svg#logo-desktop" width="202" height="59">
@@ -31,13 +33,13 @@
   <nav class="page-nav">
     <ul class="page-nav__list">
       <li class="page-nav__item">
-        <a class="page-nav__link page-nav__link--active">Главная</a>
+        <a class="page-nav__link page-nav__link--main-page page-nav__link--active">Главная</a>
       </li>
       <li class="page-nav__item">
-        <a class="page-nav__link" href="#">Каталог продукции</a>
+        <a class="page-nav__link page-nav__link--main-page" href="catalog.html">Каталог продукции</a>
       </li>
       <li class="page-nav__item">
-        <a class="page-nav__link" href="#">Подбор программы</a>
+        <a class="page-nav__link page-nav__link--main-page" href="#">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -69,7 +71,7 @@
     <section class="type-of-products page-main__type-of-products">
       <h2 class="visually-hidden">Виды питания</h2>
       <ul class="type-of-products__list">
-        <li class="type-of-products__item type-of-product type-of-products__item--slim">
+        <li class="type-of-products__item type-of-product type-of-product--slim">
           <h3 class="type-of-product__header type-of-product__header--slim">Похудение</h3>
           <p class="type-of-product__paragraph type-of-product__paragraph--slim">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
@@ -79,7 +81,7 @@
             Каталог slim
           </a>
         </li>
-        <li class="type-of-products__item type-of-product type-of-products__item--pro">
+        <li class="type-of-products__item type-of-product type-of-product--pro">
           <h3 class="type-of-product__header type-of-product__header--pro">Набор массы</h3>
           <p class="type-of-product__paragraph type-of-product__paragraph--pro">
             Заработать авторитет среди дворовых котов и даже собак?
@@ -115,9 +117,9 @@
 
   <section class=" additional-information page-main__additional-information">
     <h2 class="container additional-information__title section-header">Живой пример</h2>
-    <div class="additional-information__container container__mobile">
-      <div class="container__desktop container__desktop__flex">
-        <div class="container__tablet">
+    <div class="additional-information__container">
+      <div class="additional-information__container--flex">
+        <div class="container--flex ">
           <p class="additional-information__paragraph">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
@@ -137,7 +139,7 @@
         </div>
 
         <div class="additional-information__media-wrapper">
-          <div class="container__tablet">
+          <div class="container--flex">
             <picture class="additional-information__image">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/additional-information-image-tablet.webp 1x, img/additional-information-image-tablet@2x.webp 2x" width="590" height="511">
               <source type="image/webp" srcset="./img/additional-information-image.webp 1x, ./img/additional-information-image@2x.webp 2x" width="280" height="232">
@@ -145,11 +147,11 @@
               <img class="additional-information__image-block" src="./img/additional-information-image.png" srcset="./img/additional-information-image@2x.png 2x" width="280" height="232">
             </picture>
             <div class="additional-information__slider">
-              <button class="additional-information__slider--button">Было</button>
+              <button class="additional-information__slider-button">Было</button>
               <div class="additional-information__slider-line">
                 <div class="additional-information__slider-point"></div>
               </div>
-              <button class="additional-information__slider--button">Стало</button>
+              <button class="additional-information__slider-button">Стало</button>
             </div>
           </div>
         </div>
@@ -157,14 +159,16 @@
     </div>
   </section>
 </main>
-  <footer class="page-footer">
+<footer class="page-footer--main-page">
 
-  <div class="page-footer__address">
-    <div class="page-footer__address--wrapper">
-      <h3 class="page-footer__address--title">Приглашаем <br>к сотрудничеству дилеров!</h3>
-      <address class="page-footer__address--place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+  <div class="page-footer-address">
+    <div class="page-footer-address__arranger">
+      <div class="page-footer-address__wrapper">
+        <h3 class="page-footer-address__title">Приглашаем <br>к сотрудничеству дилеров!</h3>
+        <address class="page-footer-address__place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+      </div>
     </div>
-    <div id="map" class="page-footer__address--map"></div>
+    <div id="map" class="page-footer-address__map"></div>
   </div>
 
   <div class="page-footer__wrapper container">

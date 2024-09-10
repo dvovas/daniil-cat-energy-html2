@@ -131,31 +131,32 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $desktop-width) {
-    color: $white;
-  }
-}
+  &--active {
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "";
 
-.page-nav__link--active {
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
+        position: absolute;
+        right: 0;
+        bottom: 14px;
+        left: 0;
 
-      position: absolute;
-      right: 0;
-      bottom: 14px;
-      left: 0;
+        width: calc(100% - 4px);
+        height: 2px;
+        margin: auto;
 
-      width: calc(100% - 4px);
-      height: 2px;
-      margin: auto;
-
-      background-color: $primary;
+        background-color: $primary;
+      }
     }
+  }
 
+  &--main-page {
     @media (min-width: $desktop-width) {
-      bottom: 16px;
-      background-color: $white;
+      color: $white;
+
+      &::before {
+        background-color: $white;
+      }
     }
   }
 }

@@ -26,6 +26,17 @@
 .additional-information__container {
   margin-top: 40px;
 
+  &--flex {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      gap: 133px;
+
+      min-width: $desktop-width;
+      margin: 0 auto;
+      padding-left: 110px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -45,17 +56,16 @@
 }
 
 .additional-information__title {
-  margin: 0;
-  margin-top: 25px;
-  padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -233,7 +243,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 500px;
     margin-top: -18px;
     margin-right: 0;
     margin-left: 0;
@@ -250,13 +259,17 @@
 
   @media (min-width: $desktop-width) {
     top: -217px;
-    left: 60px;
+    left: -50px;
   }
 }
 
 .additional-information__image-block {
   display: block;
-  margin: 0 auto;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .additional-information__slider {
@@ -266,8 +279,8 @@
   align-items: center;
   justify-content: space-between;
 
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding-top: 20px;
   padding-bottom: 44px;
 
@@ -302,7 +315,7 @@
   }
 }
 
-.additional-information__slider--button {
+.additional-information__slider-button {
   cursor: pointer;
 
   padding: 0;
