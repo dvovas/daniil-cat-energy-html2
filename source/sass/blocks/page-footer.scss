@@ -175,6 +175,12 @@
   }
 }
 
+.page-footer__media-item {
+  &:focus-within {
+    outline: 2px solid $black;
+  }
+}
+
 .page-footer__copyright-logo {
   width: 27px;
   height: 34px;
