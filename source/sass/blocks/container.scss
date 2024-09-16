@@ -23,6 +23,18 @@
     }
   }
 
+  &--form {
+    @media (min-width: $tablet-width) {
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
     margin: 0 auto;
