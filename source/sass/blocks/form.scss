@@ -14,7 +14,11 @@
 
     width: 1220px;
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 55px;
+
+    &--radio {
+      margin-top: 65px;
+    }
   }
 }
 
@@ -41,17 +45,6 @@
   text-transform: uppercase;
   list-style-type: none;
 
-  &--contact-info {
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: 570px 570px;
-      gap: 80px;
-      justify-content: center;
-
-      margin-top: 75px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     gap: 19px;
     margin-top: 65px;
@@ -63,6 +56,17 @@
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
+  }
+
+  &--contact-info {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 570px 570px;
+      gap: 80px;
+      justify-content: center;
+
+      margin-top: 75px;
+    }
   }
 }
 
@@ -190,7 +194,7 @@
   padding-bottom: 19px;
   padding-left: 20px;
 
-  border: 0;
+  border: none;
   border-top: 1px solid $special-grey;
   border-bottom: 1px solid $special-grey;
 
@@ -322,7 +326,7 @@
 .form__textarea-fieldset {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
 }
 
 .form__textarea-wrapper {
@@ -380,7 +384,7 @@
 .form__checkbox-fieldset {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
 }
 
 .form__checkbox-list {
@@ -406,7 +410,7 @@
     row-gap: 40px;
     column-gap: 65px;
 
-    margin-top: 58px;
+    margin-top: 53px;
 
     font-size: 20px;
   }
